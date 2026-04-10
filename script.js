@@ -139,10 +139,10 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const formData = new FormData(quoteForm);
 
-      fetch('/', {
+      fetch('https://formspree.io/f/xojpobqz', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString(),
+        headers: { 'Accept': 'application/json' },
+        body: formData,
       })
         .then(() => {
           if (formSuccess) {
