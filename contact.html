@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Request a Private Utility Locate | Mile High Locating</title>
-  <meta name="description" content="Request a private utility locate or quote in Denver and the Front Range. Call (720) 514-2876 or send your jobsite details online.">
+  <meta name="description" content="Request a private utility locate date in Denver and the Front Range. Most residential locates start at $300. Call (720) 514-2876 or send your details online.">
   <link rel="canonical" href="https://mile-high-locating.com/contact.html">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
@@ -15,7 +15,7 @@
   <meta property="og:site_name" content="Mile High Locating">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Request a Private Utility Locate | Mile High Locating">
-  <meta property="og:description" content="Request a private utility locate or quote in Denver and the Front Range. Call (720) 514-2876 or send your jobsite details online.">
+  <meta property="og:description" content="Request a private utility locate date in Denver and the Front Range. Most residential locates start at $300. Call (720) 514-2876 or send your details online.">
   <meta property="og:url" content="https://mile-high-locating.com/contact.html">
   <meta property="og:image" content="https://mile-high-locating.com/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -23,7 +23,7 @@
   <meta property="og:image:alt" content="Mile High Locating — underground utility locating">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Request a Private Utility Locate | Mile High Locating">
-  <meta name="twitter:description" content="Request a private utility locate or quote in Denver and the Front Range. Call (720) 514-2876 or send your jobsite details online.">
+  <meta name="twitter:description" content="Request a private utility locate date in Denver and the Front Range. Most residential locates start at $300. Call (720) 514-2876 or send your details online.">
   <meta name="twitter:image" content="https://mile-high-locating.com/og-image.jpg">
   <script>document.documentElement.classList.add('js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -184,22 +184,23 @@
 
           <h3>What happens next</h3>
           <ol class="contact-steps">
-            <li>We call you back, normally within 1 business day.</li>
-            <li>We confirm the scope, timing and price.</li>
-            <li>We schedule and mark the site — most Front Range jobs within 1–3 business days.</li>
+            <li>You request a date — with this form or by phone.</li>
+            <li>We text you to confirm the date, scope and price — usually the same business day.</li>
+            <li>We mark the site on the confirmed date. Most Front Range jobs are scheduled within 1–3 business days.</li>
           </ol>
 
           <div class="utility-divider utility-divider--short" style="margin: 24px 0;">
             <span></span><span></span><span></span>
           </div>
 
-          <p class="contact-trust">Serving the Denver metro, the Front Range and the rest of Colorado&ensp;|&ensp;Radiodetection &amp; Vivax-Metrotech locating equipment&ensp;|&ensp;Written locate reports on request</p>
+          <p class="contact-trust">Serving the Denver metro, the Front Range and the rest of Colorado&ensp;|&ensp;Professional-grade Vivax-Metrotech electromagnetic locating equipment&ensp;|&ensp;Written locate reports with GPS-tagged photos on request</p>
         </div>
 
         <!-- Right: Locate Request Form -->
         <div class="quote-form reveal reveal-delay-1" id="quote-form">
-          <h2>Request a Locate or Quote</h2>
+          <h2>Request a Locate Date</h2>
           <p class="form-intro">Takes about a minute. Only the starred fields are required.</p>
+          <p class="price-note">Most residential locates start at $300 ($150/hr, 2-hour minimum). Travel fee may apply outside the Denver metro.</p>
           <form id="request-form" action="https://formspree.io/f/xojpobqz" method="POST">
             <input type="hidden" name="_replyto" value="7205142876@tmomail.net">
             <input type="hidden" name="_subject" value="New Locate Request — Mile High Locating">
@@ -262,15 +263,24 @@
               </div>
             </div>
 
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferred_date">Preferred date <span class="required" aria-hidden="true">*</span></label>
+                <input type="date" id="preferred_date" name="preferred_date" required>
+              </div>
+              <div class="form-group">
+                <label for="time_window">Time window</label>
+                <select id="time_window" name="time_window">
+                  <option>Morning</option>
+                  <option>Afternoon</option>
+                  <option selected>Either</option>
+                </select>
+              </div>
+            </div>
+
             <div class="form-group">
-              <label for="needed_by">When do you need it marked?</label>
-              <select id="needed_by" name="needed_by">
-                <option value="">Select one</option>
-                <option>As soon as possible</option>
-                <option>This week</option>
-                <option>Next week</option>
-                <option>Flexible</option>
-              </select>
+              <label for="backup_date">Backup date <span class="optional">(optional)</span></label>
+              <input type="date" id="backup_date" name="backup_date">
             </div>
 
             <div class="form-group">
@@ -278,8 +288,14 @@
               <textarea id="notes" name="message" placeholder="Dig area, depth, site access, what you're worried about…"></textarea>
             </div>
 
-            <button type="submit" class="btn-submit">Send Locate Request</button>
-            <p class="form-note">We'll call you back, normally within 1 business day. Need it sooner? Call <a href="tel:+17205142876" data-cta="form-note">(720) 514-2876</a>.</p>
+            <div class="form-check">
+              <input type="checkbox" id="wants_report" name="wants_report" value="yes">
+              <label for="wants_report">I'd like a written locate report with GPS-tagged photos</label>
+            </div>
+
+            <p class="booking-note">This is a request, not a confirmed booking. We'll text you to confirm the date, scope and price — usually the same business day.</p>
+            <button type="submit" class="btn-submit">Send Date Request</button>
+            <p class="form-note">Need it sooner? Call <a href="tel:+17205142876" data-cta="form-note">(720) 514-2876</a>.</p>
             <div class="form-error" id="form-error" role="alert" hidden>
               Your request didn't go through. Please call <a href="tel:+17205142876" data-cta="form-error">(720) 514-2876</a> or email <a href="mailto:isaac@mile-high-locating.com">isaac@mile-high-locating.com</a> so we don't miss your job.
             </div>
@@ -289,7 +305,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             </span>
             <h3>Request Sent</h3>
-            <p>We got your locate request and will follow up by phone within 1 business day. For faster service, call us directly at <a href="tel:+17205142876" data-cta="form-success">(720) 514-2876</a>.</p>
+            <p>We got your date request. It isn't a confirmed booking yet — we'll text you to confirm the date, scope and price, usually the same business day. Need it sooner? Call <a href="tel:+17205142876" data-cta="form-success">(720) 514-2876</a>.</p>
           </div>
         </div>
 

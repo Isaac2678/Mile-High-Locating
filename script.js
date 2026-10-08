@@ -166,6 +166,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitLabel = submitBtn ? submitBtn.textContent : '';
     let started = false;
 
+    // Date pickers can't go earlier than today (local time)
+    const now = new Date();
+    const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    quoteForm.querySelectorAll('input[type="date"]').forEach(input => { input.min = today; });
+
     quoteForm.addEventListener('focusin', () => {
       if (!started) {
         started = true;
